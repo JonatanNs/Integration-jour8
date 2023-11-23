@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+
+html {
+	font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+    
+}
+
+body {
+	font-size: 1.8rem; /* on remets la taille du texte par défaut pour le body à 16px en utilisant les rem comme unité) */
+    font-family: 'Nunito', sans-serif;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*******************************
+        HEADER  // Titre et nav: font-family: 'Fjalla One', sans-serif;
+*******************************/
+header{
+    background-color: #00748D;
+    text-align: center;
+    margin-top: -1em;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2rem;
+    color: white;
+    padding-top: 2em;
+}
+
+.logo-archidesign p:last-of-type{
+    margin-top: -1em;
+}
+
+menu {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 2rem;
+    margin-left: -2em;
+}
+
+menu > a{
+    list-style: none;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+menu a:hover{
+    display: inline-block;
+    background-color: white;
+    color: #00748D;
+
+}
+
+.path{
+    background-image: url(/img/path.png);
+    background-repeat: repeat-x;
+    padding: 0.2em;
+    min-width: 680px;
+}
+
+.img-header{
+    background-image: url(/img/bg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    padding: 10em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-header h1{
+    background-color: #CB8606;
+    color: #fff; 
+    min-width: 12em;
+    padding: 0.1em;
+    font-size: 3rem;
+    margin-top: -0.5em;
+}
+.img-header p{
+    background-color: #fff;
+    color: #00748D;
+    padding: 0.5em;
+    min-width: 25em;
+    margin-bottom: -4em;
+}
+/********************************
+        MAIN
+*********************************/
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*******************************
+        - Nos prestations - 
+******************************/
+
+.container > section h2{
+    text-align: center;
+    color: #00748D;
+    font-size: 2.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 2.5em;
+}
+
+.prestations{
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 1.6rem;
+}
+
+.prestations article h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.prestations p{
+    text-align: justify;
+}
+
+
+.icon{
+    margin-top: 6em;
+}
+
+/*******************************
+        En savoir plus 
+******************************/
+
+.en-savoir-plus{
+    padding: 0.6em;
+    border: none;
+    background-color: #00748D;
+    color: #fff;
+    width: 60%;
+}
+
+/************************
+    Nos prestataires
+*************************/
+
+.prestataires{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.prestataires img{
+    border: 3px solid #00748D;
+}
+
+/*******************************
+     MAIN FOOTER
+*******************************/
+.main-footer{
+    background-color: #00748D;
+    text-align: center;
+    margin-bottom: -3em;
+    padding: 3em;
+}
+
+.main-footer p:first-of-type{
+    margin: 2em;
+}
+
+.main-footer p:first-of-type i{
+    margin-left: 0.5em;
+}
+
+.logo-archidesign p:nth-of-type(2){
+    margin-top: -0.8em;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+
+.path-bottom{
+    background-image: url(/img/path.png);
+    background-repeat: repeat-x;
+    min-width: 680px;
+    margin-left: -3em;
+    padding: 0.3em;
+}
+
+img{
+    max-width: 100%;
+}
+/*******************************
+        FOOTER
+********************************/
+.footer {
+	padding: 2em;
+	text-align: center;
+	color: #fff;
+	background-color: #444;
+    font-size: 1.4rem;
+}
+
+a{
+    color: #CB8606;
+    text-decoration: none;
+}
+
+@media screen and (min-width:991px){
+
+    body{
+        min-width: 991px;
+    }
+    header{
+        background-color: #00748D;
+        
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 2rem;
+        color: white;
+        text-wrap: nowrap;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .logo-archidesign{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo-archidesign p:nth-of-type(2){ 
+        margin-top: 1.5em;
+    }
+
+    menu {
+        text-wrap: nowrap;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    menu > a{
+        margin-left: 1em;
+    }
+
+    .path{
+        min-width: 991px;
+        grid-row: 2/2;
+    }
+    
+    
+    /********************************
+            MAIN
+    *********************************/
+    
+    .container{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .prestations{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3em;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .prestataires{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3em;
+    }
+    .main-footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo-archidesign p:last-of-type{
+        
+    }
+    img{
+       max-height: 100% 200px; 
+       max-width: 100% 200px;
+    }
+    
+}
